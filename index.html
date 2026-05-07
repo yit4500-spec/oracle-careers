@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oracle Careers | Data Engineering</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">ORACLE CAREERS</div>
+  <nav>
+    <a href="#jobs">Jobs</a>
+    <a href="#apply">Apply</a>
+    <a href="#admin">Admin</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Data Engineering Careers</h1>
+  <p>Build enterprise-scale data systems at Oracle Irvine.</p>
+  <p>17901 Von Karman Avenue, Suite 800, Irvine, CA 92614</p>
+</section>
+
+<section id="jobs" class="grid">
+  <div class="card">
+    <h2>Junior Data Engineer</h2>
+    <p>ETL pipelines, SQL, cloud data workflows.</p>
+    <button onclick="saveRole('Junior Data Engineer')">Save Interest</button>
+  </div>
+
+  <div class="card">
+    <h2>Senior Data Engineer</h2>
+    <p>Architecture, distributed systems, leadership.</p>
+    <button onclick="saveRole('Senior Data Engineer')">Save Interest</button>
+  </div>
+</section>
+
+<section id="apply" class="section">
+  <h2>Apply Online</h2>
+  <form onsubmit="submitApp(event)">
+    <input placeholder="Full Name" required>
+    <input placeholder="Email" required>
+    <input placeholder="Position" required>
+    <input type="file" required>
+    <textarea placeholder="Cover Letter"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="admin" class="admin">
+  <h2>Admin Panel</h2>
+  <div id="apps"></div>
+</section>
+
+<footer>
+  © Oracle Inspired Careers Portal
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
